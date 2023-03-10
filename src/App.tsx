@@ -1,12 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom'
 
-import "./index.css";
-
-const test = {
-  teste: 'asd',
-  test1: ''
-}
+import './index.css'
 
 const App = () => (
   <div className="container">
@@ -15,5 +9,5 @@ const App = () => (
     <div>Language: TypeScript</div>
     <div>CSS: Empty CSS</div>
   </div>
-);
-ReactDOM.render(<App />, document.getElementById("app"));
+)
+ReactDOM.render(<App />, document.getElementById('app'))
