@@ -36,12 +36,6 @@
 
     "no-console": "warn",
 
-    "prettier/prettier": [
-      "warn",
-      {
-        "endOfLine": "lf",
-        "singleQuote": true
-      }
-    ]
+    "prettier/prettier": "off"
   }
 }
