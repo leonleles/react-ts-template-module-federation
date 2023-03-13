@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin')
 
 const deps = require('./package.json').dependencies
+
 module.exports = {
   output: {
     publicPath: 'http://localhost:8080/',
@@ -9,6 +10,9 @@ module.exports = {
 
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
+    alias: {
+      ['@/*']: 'src/*',
+    },
   },
 
   devServer: {
@@ -34,7 +38,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-        },
+        }
       },
     ],
   },
